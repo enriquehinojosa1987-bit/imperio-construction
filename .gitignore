@@ -1,0 +1,6 @@
+# Dev / local only — not part of the published site
+.claude/
+graphify-out/
+.DS_Store
+Thumbs.db
+*.log

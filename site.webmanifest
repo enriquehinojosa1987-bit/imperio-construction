@@ -1,0 +1,13 @@
+{
+  "name": "Imperio Construction",
+  "short_name": "Imperio",
+  "description": "Licensed & insured general contractor serving McAllen and the Rio Grande Valley.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1c2e",
+  "theme_color": "#0f1c2e",
+  "icons": [
+    { "src": "/images/favicon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/images/logo-square.png", "sizes": "420x349", "type": "image/png" }
+  ]
+}
