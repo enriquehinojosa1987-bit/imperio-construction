@@ -52,6 +52,27 @@
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
 
+  // Keep the LeadConnector chat widget above the mobile sticky call bar.
+  // The widget's fixed elements live in an open shadow root at bottom:20px,
+  // which collides with the 64px-tall bar on small screens.
+  function liftChatWidget() {
+    var cw = document.querySelector("chat-widget");
+    if (!cw || !cw.shadowRoot) return false;
+    if (cw.shadowRoot.getElementById("imperio-chat-offset")) return true;
+    var st = document.createElement("style");
+    st.id = "imperio-chat-offset";
+    st.textContent =
+      "@media (max-width: 720px){" +
+      ".lc_text-widget, .lc_text-widget--bubble { bottom: 84px !important; }" +
+      "}";
+    cw.shadowRoot.appendChild(st);
+    return true;
+  }
+  var chatTries = 0;
+  var chatTimer = setInterval(function () {
+    if (liftChatWidget() || ++chatTries > 40) clearInterval(chatTimer);
+  }, 500);
+
   /* ----------------------------------------------------------------
      Placeholder lead forms.
      These will be replaced by GoHighLevel (GHL) embeds. Until then,

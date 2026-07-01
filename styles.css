@@ -56,6 +56,7 @@ section { padding: 92px 0; }
   white-space: nowrap;
 }
 .btn:active { transform: translateY(1px); }
+.btn svg { width: 18px; height: 18px; fill: currentColor; flex: none; }
 .btn-gold { background: var(--gold); color: #fff; box-shadow: 0 8px 20px rgba(200, 147, 47, .35); }
 .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 26px rgba(200, 147, 47, .45); }
 .btn-outline { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .55); }
@@ -354,3 +355,21 @@ section { padding: 92px 0; }
   .nav.open .nav-links { max-height: 82vh; overflow-y: auto; }
 }
 
+
+/* ---------- Mobile polish ---------- */
+@media (max-width: 720px) {
+  /* Tighter header: smaller logo frees up screen space */
+  .site-header { padding: 10px 0; }
+  .site-header.scrolled { padding: 8px 0; }
+  .brand img { height: 46px; }
+  html { scroll-padding-top: 70px; }
+
+  /* Hero: comfortable spacing under the shorter header */
+  .hero { padding-top: 104px; }
+
+  /* Full-width tap-friendly hero CTA */
+  .hero-actions .btn { width: 100%; justify-content: center; }
+
+  /* Footer logo scales down instead of dominating the column */
+  .footer-grid img { width: 200px; }
+}
