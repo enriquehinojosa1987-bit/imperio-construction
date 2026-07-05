@@ -149,12 +149,20 @@ section { padding: 92px 0; }
 
 /* ---------- Gallery ---------- */
 .gallery { background: var(--bg-soft); }
-.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 200px; gap: 16px; }
-.gallery-grid a { display: block; overflow: hidden; border-radius: 12px; position: relative; box-shadow: var(--shadow-sm); }
+.gallery-filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 28px; }
+.filter-btn {
+  font-family: inherit; font-size: .9rem; font-weight: 600; letter-spacing: .02em;
+  color: var(--navy); background: #fff; border: 1px solid rgba(15,28,46,.15);
+  padding: 9px 18px; border-radius: 999px; cursor: pointer;
+  transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
+}
+.filter-btn:hover { border-color: var(--gold); color: var(--gold); }
+.filter-btn.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.gallery-grid a { display: block; overflow: hidden; border-radius: 12px; position: relative; box-shadow: var(--shadow-sm); aspect-ratio: 4 / 3; }
 .gallery-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
 .gallery-grid a:hover img { transform: scale(1.08); }
-.gallery-grid .tall { grid-row: span 2; }
-.gallery-grid .wide { grid-column: span 2; }
+.gallery-grid .g-item.hide { display: none; }
 
 /* ---------- Reviews ---------- */
 .reviews { background: var(--navy); color: #fff; }
@@ -252,9 +260,7 @@ section { padding: 92px 0; }
   .stat:nth-child(2) { border-right: 0; }
   .stat { border-bottom: 1px solid rgba(255, 255, 255, .08); }
   .service-grid, .review-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
-  .gallery-grid .wide { grid-column: span 2; }
-  .gallery-grid .tall { grid-row: span 1; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .field-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .why-badge { left: 0; }

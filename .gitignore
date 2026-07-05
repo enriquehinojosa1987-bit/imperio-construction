@@ -1,6 +1,8 @@
 # Dev / local only — not part of the published site
 .claude/
 graphify-out/
+after photos/
+site photo updates/
 .DS_Store
 Thumbs.db
 *.log

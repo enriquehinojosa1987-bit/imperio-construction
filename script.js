@@ -73,6 +73,25 @@
     if (liftChatWidget() || ++chatTries > 40) clearInterval(chatTimer);
   }, 500);
 
+  // Gallery category filter (Our Work page)
+  var filterBar = document.getElementById("galleryFilters");
+  var galleryGrid = document.getElementById("galleryGrid");
+  if (filterBar && galleryGrid) {
+    var items = galleryGrid.querySelectorAll(".g-item");
+    filterBar.addEventListener("click", function (e) {
+      var btn = e.target.closest(".filter-btn");
+      if (!btn) return;
+      var filter = btn.getAttribute("data-filter");
+      filterBar.querySelectorAll(".filter-btn").forEach(function (b) {
+        b.classList.toggle("active", b === btn);
+      });
+      items.forEach(function (item) {
+        var show = filter === "all" || item.getAttribute("data-cat") === filter;
+        item.classList.toggle("hide", !show);
+      });
+    });
+  }
+
   /* ----------------------------------------------------------------
      Placeholder lead forms.
      These will be replaced by GoHighLevel (GHL) embeds. Until then,

@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Work — Project Gallery | Imperio Construction</title>
-  <meta name="description" content="See recent concrete, framing, painting, flooring, and cabinet projects by Imperio Construction across McAllen and the Rio Grande Valley." />
+  <meta name="description" content="See recent concrete, framing, painting, flooring, power washing, and cabinet projects by Imperio Construction across McAllen and the Rio Grande Valley. Filter by category." />
   <meta name="author" content="Imperio Construction LLC" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0f1c2e" />
   <link rel="canonical" href="https://imperioconstructionllc.com/work.html" />
   <meta property="og:site_name" content="Imperio Construction" />
   <meta property="og:title" content="Our Work — Project Gallery | Imperio Construction" />
-  <meta property="og:description" content="See recent concrete, framing, painting, flooring, and cabinet projects by Imperio Construction across McAllen and the Rio Grande Valley." />
+  <meta property="og:description" content="See recent concrete, framing, painting, flooring, power washing, and cabinet projects by Imperio Construction across McAllen and the Rio Grande Valley. Filter by category." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://imperioconstructionllc.com/work.html" />
   <meta property="og:image" content="https://imperioconstructionllc.com/images/hero-bg.jpg" />
@@ -32,7 +32,7 @@
         <a class="brand" href="/" aria-label="Imperio Construction home">
           <img src="/images/logo-landscape.png" alt="Imperio Construction logo" width="660" height="206" />
         </a>
-        <ul class="nav-links"><li class="has-dropdown"><a href="/services.html">Services</a><ul class="dropdown"><li><a href="/services/concrete-work.html">Concrete Work</a></li><li><a href="/services/framing.html">Framing</a></li><li><a href="/services/painting.html">Painting</a></li><li><a href="/services/flooring.html">Flooring</a></li><li><a href="/services/power-washing.html">Power Washing</a></li><li><a href="/services/cabinets.html">Cabinets</a></li></ul></li><li><a href="/work.html" class="active">Our Work</a></li><li><a href="/about.html">About</a></li><li><a href="/reviews.html">Reviews</a></li><li><a href="/contact.html">Contact</a></li></ul>
+        <ul class="nav-links"><li class="has-dropdown"><a href="/services.html">Services</a><ul class="dropdown"><li><a href="/services/concrete-work.html">Concrete Work</a></li><li><a href="/services/framing.html">Framing</a></li><li><a href="/services/painting.html">Painting</a></li><li><a href="/services/flooring.html">Flooring</a></li><li><a href="/services/power-washing.html">Power Washing</a></li><li><a href="/services/epoxy.html">Epoxy Flooring</a></li><li><a href="/services/cabinets.html">Cabinets</a></li></ul></li><li><a href="/work.html" class="active">Our Work</a></li><li><a href="/about.html">About</a></li><li><a href="/reviews.html">Reviews</a></li><li><a href="/contact.html">Contact</a></li></ul>
         <div class="nav-cta">
           <a class="nav-phone" href="tel:+19569968705" aria-label="Call Imperio Construction"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.7 21 3 13.3 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>(956) 996-8705</a>
           <a class="btn btn-gold" href="/contact.html">Get a Free Estimate</a>
@@ -51,15 +51,86 @@
 
   <section class="gallery">
     <div class="container">
-      <div class="gallery-grid reveal">
-        <a class="wide" href="/images/gallery-1.jpg" target="_blank" rel="noopener"><img src="/images/gallery-1.jpg" alt="Completed construction project in McAllen" loading="lazy" width="800" height="544" /></a>
-        <a class="tall" href="/images/gallery-5.jpg" target="_blank" rel="noopener"><img src="/images/gallery-5.jpg" alt="Custom home with pool in the RGV" loading="lazy" width="800" height="1200" /></a>
-        <a href="/images/gallery-2.jpg" target="_blank" rel="noopener"><img src="/images/gallery-2.jpg" alt="Completed exterior project in the Rio Grande Valley" loading="lazy" width="800" height="533" /></a>
-        <a href="/images/gallery-6.jpg" target="_blank" rel="noopener"><img src="/images/gallery-6.jpg" alt="Completed home project by Imperio Construction" loading="lazy" width="800" height="671" /></a>
-        <a href="/images/service-concrete.jpg" target="_blank" rel="noopener"><img src="/images/service-concrete.jpg" alt="Concrete driveway finishing in McAllen" loading="lazy" width="800" height="533" /></a>
-        <a class="wide" href="/images/service-framing.jpg" target="_blank" rel="noopener"><img src="/images/service-framing.jpg" alt="Home framing project in the Valley" loading="lazy" width="800" height="533" /></a>
-        <a href="/images/service-cabinets.jpg" target="_blank" rel="noopener"><img src="/images/service-cabinets.jpg" alt="Kitchen cabinet installation" loading="lazy" width="800" height="534" /></a>
-        <a href="/images/service-flooring.jpg" target="_blank" rel="noopener"><img src="/images/service-flooring.jpg" alt="Wood flooring installation" loading="lazy" width="800" height="533" /></a>
+      <div class="gallery-filters reveal" id="galleryFilters">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="concrete">Concrete</button>
+        <button class="filter-btn" data-filter="framing">Framing</button>
+        <button class="filter-btn" data-filter="painting">Painting</button>
+        <button class="filter-btn" data-filter="flooring">Flooring</button>
+        <button class="filter-btn" data-filter="power-washing">Power Washing</button>
+        <button class="filter-btn" data-filter="epoxy">Epoxy Flooring</button>
+        <button class="filter-btn" data-filter="cabinets">Cabinets</button>
+      </div>
+      <div class="gallery-grid reveal" id="galleryGrid">
+        <a class="g-item" data-cat="concrete" href="/images/service-concrete.jpg" target="_blank" rel="noopener"><img src="/images/service-concrete.jpg" alt="Concrete driveway finishing in McAllen" loading="lazy" width="800" height="533" /></a>
+        <a class="g-item" data-cat="concrete" href="/images/gallery-1.jpg" target="_blank" rel="noopener"><img src="/images/gallery-1.jpg" alt="Completed construction project in McAllen" loading="lazy" width="800" height="544" /></a>
+        <a class="g-item" data-cat="framing" href="/images/service-framing.jpg" target="_blank" rel="noopener"><img src="/images/service-framing.jpg" alt="Home framing project in the Valley" loading="lazy" width="800" height="533" /></a>
+        <a class="g-item" data-cat="framing" href="/images/gallery-5.jpg" target="_blank" rel="noopener"><img src="/images/gallery-5.jpg" alt="Custom home with pool in the RGV" loading="lazy" width="800" height="1200" /></a>
+        <a class="g-item" data-cat="painting" href="/images/service-painting.jpg" target="_blank" rel="noopener"><img src="/images/service-painting.jpg" alt="Interior painting project in the Rio Grande Valley" loading="lazy" width="800" height="533" /></a>
+        <a class="g-item" data-cat="flooring" href="/images/service-flooring.jpg" target="_blank" rel="noopener"><img src="/images/service-flooring.jpg" alt="Wood flooring installation" loading="lazy" width="800" height="533" /></a>
+        <a class="g-item" data-cat="cabinets" href="/images/service-cabinets.jpg" target="_blank" rel="noopener"><img src="/images/service-cabinets.jpg" alt="Kitchen cabinet installation" loading="lazy" width="800" height="534" /></a>
+        <a class="g-item" data-cat="cabinets" href="/images/gallery-6.jpg" target="_blank" rel="noopener"><img src="/images/gallery-6.jpg" alt="Completed home project by Imperio Construction" loading="lazy" width="800" height="671" /></a>
+        <a class="g-item" data-cat="framing" href="/images/gallery-2.jpg" target="_blank" rel="noopener"><img src="/images/gallery-2.jpg" alt="Completed exterior project in the Rio Grande Valley" loading="lazy" width="800" height="533" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-01.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-01.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-02.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-02.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-03.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-03.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-04.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-04.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-05.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-05.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-06.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-06.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-07.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-07.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-08.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-08.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-09.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-09.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-10.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-10.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-11.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-11.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-12.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-12.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-13.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-13.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-14.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-14.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-15.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-15.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-16.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-16.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-17.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-17.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-18.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-18.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-19.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-19.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-20.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-20.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-21.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-21.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-22.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-22.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-23.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-23.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-24.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-24.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-25.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-25.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-26.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-26.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-27.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-27.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-28.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-28.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-29.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-29.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-30.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-30.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-31.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-31.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="712" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-32.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-32.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-33.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-33.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="970" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-34.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-34.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="938" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-35.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-35.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-36.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-36.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="1050" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-37.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-37.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-38.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-38.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="1050" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-39.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-39.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="1050" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-40.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-40.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="1050" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-41.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-41.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-42.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-42.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="1050" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-43.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-43.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="1050" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-44.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-44.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-45.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-45.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="1050" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-46.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-46.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="1050" /></a>
+        <a class="g-item" data-cat="power-washing" href="/images/work/power-washing/pw-47.jpg" target="_blank" rel="noopener"><img src="/images/work/power-washing/pw-47.jpg" alt="Power washing project in McAllen — after cleaning" loading="lazy" width="1400" height="970" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-01.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-01.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-02.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-02.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1120" height="1400" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-03.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-03.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-04.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-04.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1050" height="1400" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-05.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-05.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1400" height="1400" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-06.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-06.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1400" height="1387" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-07.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-07.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1051" height="1400" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-08.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-08.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1119" height="1400" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-09.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-09.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1120" height="1400" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-10.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-10.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1119" height="1400" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-11.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-11.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1119" height="1400" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-12.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-12.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1400" height="1400" /></a>
+        <a class="g-item" data-cat="epoxy" href="/images/work/epoxy/ep-13.jpg" target="_blank" rel="noopener"><img src="/images/work/epoxy/ep-13.jpg" alt="Epoxy flooring project in McAllen and the Rio Grande Valley" loading="lazy" width="1400" height="1381" /></a>
       </div>
     </div>
   </section>
@@ -82,7 +153,7 @@
         </div>
         <div class="footer-col">
           <h4>Services</h4>
-          <ul><li><a href="/services/concrete-work.html">Concrete Work</a></li><li><a href="/services/framing.html">Framing</a></li><li><a href="/services/painting.html">Painting</a></li><li><a href="/services/flooring.html">Flooring</a></li><li><a href="/services/power-washing.html">Power Washing</a></li><li><a href="/services/cabinets.html">Cabinets</a></li></ul>
+          <ul><li><a href="/services/concrete-work.html">Concrete Work</a></li><li><a href="/services/framing.html">Framing</a></li><li><a href="/services/painting.html">Painting</a></li><li><a href="/services/flooring.html">Flooring</a></li><li><a href="/services/power-washing.html">Power Washing</a></li><li><a href="/services/epoxy.html">Epoxy Flooring</a></li><li><a href="/services/cabinets.html">Cabinets</a></li></ul>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
